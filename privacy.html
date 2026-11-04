@@ -59,7 +59,7 @@
         <p>Todo se guarda en el computador donde está instalada la aplicación:</p>
         <ul>
           <li><strong>Facturas descargadas</strong> (PDF y XML): en la carpeta que tú eliges. Junto a cada una se guarda un archivo oculto con el identificador del correo de Gmail, para evitar duplicados al reintentar.</li>
-          <li><strong>Credenciales de acceso (tokens de Google)</strong>: un archivo por cuenta, en la carpeta de datos de la aplicación del usuario del sistema operativo, con permisos restringidos al usuario cuando el sistema lo permite (macOS y Linux). Los tokens nunca se escriben en el registro ni se incluyen en el paquete de la aplicación.</li>
+          <li><strong>Credenciales de acceso (tokens de Google)</strong>: un archivo por cuenta, en la carpeta de datos de la aplicación del usuario del sistema operativo, con el acceso restringido exclusivamente al usuario actual del sistema (permisos 0600 en macOS y Linux y, en Windows, la lista de control de acceso del archivo). Los tokens nunca se escriben en el registro ni se incluyen en el paquete de la aplicación.</li>
           <li><strong>Lista de clientes</strong>: el nombre, la dirección de Gmail y la cédula que tú escribes para cada cliente, y la configuración de la aplicación (carpeta de facturas, tema).</li>
           <li><strong>Registro de actividad</strong> (log): eventos técnicos para diagnosticar errores, sin tokens ni secretos.</li>
         </ul>

@@ -61,7 +61,7 @@
         <p>Everything is stored on the computer where the app is installed:</p>
         <ul>
           <li><strong>Downloaded invoices</strong> (PDF and XML): in the folder you choose. Next to each one, a hidden file keeps the Gmail message identifier so that retries do not create duplicates.</li>
-          <li><strong>Access credentials (Google tokens)</strong>: one file per account, in the app data folder of the operating-system user, with permissions restricted to that user where the system supports it (macOS and Linux). Tokens are never written to the log or included in the application package.</li>
+          <li><strong>Access credentials (Google tokens)</strong>: one file per account, in the app data folder of the operating-system user, with access restricted exclusively to the current operating-system user (0600 permissions on macOS and Linux and, on Windows, the file's access control list). Tokens are never written to the log or included in the application package.</li>
           <li><strong>Client list</strong>: the name, Gmail address and tax ID you enter for each client, and the app settings (invoice folder, theme).</li>
           <li><strong>Activity log</strong>: technical events used to diagnose errors, without tokens or secrets.</li>
         </ul>

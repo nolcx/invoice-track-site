@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <title>Política de privacidad · Privacy Policy — Invoice Track</title>
+  <meta name="description" content="Política de privacidad de Invoice Track: qué datos de Google usa la aplicación, dónde se guardan y cómo eliminarlos. / Privacy Policy of Invoice Track.">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <div class="orbs" aria-hidden="true"></div>
+
+  <main class="wrap">
+    <header class="hero">
+      <a href="index.html"><img class="logo" src="img/logo.png" width="88" height="88" alt="Invoice Track"></a>
+      <h1>Política de privacidad</h1>
+      <p class="lead">Privacy Policy</p>
+      <nav class="nav" aria-label="Idioma / Language">
+        <a class="btn secondary" href="#es">Español</a>
+        <a class="btn secondary" href="#en">English</a>
+        <a class="btn secondary" href="index.html">Invoice Track</a>
+      </nav>
+    </header>
+
+    <!-- ===================== ESPAÑOL ===================== -->
+    <article id="es" lang="es">
+      <section class="panel">
+        <h2>Resumen</h2>
+        <p class="updated">Última actualización: 4 de noviembre de 2026</p>
+        <p><strong>Invoice Track</strong> es una aplicación de escritorio que descarga las facturas electrónicas (PDF y XML) de tus correos de Gmail y las organiza en tu computador. <strong>Todo se procesa localmente: no enviamos tus correos, adjuntos ni credenciales a ningún servidor del desarrollador ni a terceros</strong>, no vendemos datos y no mostramos publicidad.</p>
+        <p class="lang-note">El uso y la transferencia a cualquier otra aplicación de la información recibida de las APIs de Google se ajustará a la <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Política de datos de usuario de los servicios de las APIs de Google</a>, incluidos los requisitos de uso limitado (<em>Limited Use</em>).</p>
+      </section>
+
+      <section class="panel">
+        <h2>1. Quién es responsable</h2>
+        <p>Invoice Track es desarrollada y mantenida por un desarrollador independiente. Puedes escribirle a <a href="mailto:nocalde28@gmail.com">nocalde28@gmail.com</a> para cualquier consulta sobre esta política o tus datos.</p>
+      </section>
+
+      <section class="panel">
+        <h2>2. Qué datos de Google usa la aplicación</h2>
+        <p>Cuando autorizas una cuenta con el inicio de sesión de Google, Invoice Track solicita un único permiso: <code>https://www.googleapis.com/auth/gmail.modify</code>. Solo se usa para lo siguiente:</p>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Dato de Google</th><th>Para qué se usa</th></tr></thead>
+            <tbody>
+              <tr><td>Dirección de correo de la cuenta autorizada</td><td>Identificar la cuenta del cliente y abrir el mensaje correcto en Gmail.</td></tr>
+              <tr><td>Lista de correos que coinciden con la búsqueda (identificador, fecha de recepción, etiquetas, nombre y tipo de los adjuntos)</td><td>Encontrar los correos con una factura (un PDF y un XML) en el rango de fechas elegido y no repetir los ya procesados.</td></tr>
+              <tr><td>Adjuntos PDF y XML de esos correos</td><td>Descargarlos, clasificarlos como compra o venta y guardarlos en tu computador.</td></tr>
+              <tr><td>Etiquetas de Gmail</td><td>Crear, si no existe, y aplicar la etiqueta <strong>Procesado</strong> a los correos ya guardados.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Para localizar los adjuntos, Gmail entrega a la aplicación el mensaje completo, pero Invoice Track <strong>no guarda ni muestra el cuerpo de tus correos</strong>. Solo conserva los datos de la tabla anterior. <strong>La aplicación nunca elimina ni envía correos</strong> y no modifica su contenido; lo único que cambia en Gmail es la etiqueta <em>Procesado</em>.</p>
+      </section>
+
+      <section class="panel">
+        <h2>3. Qué se guarda y dónde</h2>
+        <p>Todo se guarda en el computador donde está instalada la aplicación:</p>
+        <ul>
+          <li><strong>Facturas descargadas</strong> (PDF y XML): en la carpeta que tú eliges. Junto a cada una se guarda un archivo oculto con el identificador del correo de Gmail, para evitar duplicados al reintentar.</li>
+          <li><strong>Credenciales de acceso (tokens de Google)</strong>: un archivo por cuenta, en la carpeta de datos de la aplicación del usuario del sistema operativo, con permisos restringidos al usuario cuando el sistema lo permite (macOS y Linux). Los tokens nunca se escriben en el registro ni se incluyen en el paquete de la aplicación.</li>
+          <li><strong>Lista de clientes</strong>: el nombre, la dirección de Gmail y la cédula que tú escribes para cada cliente, y la configuración de la aplicación (carpeta de facturas, tema).</li>
+          <li><strong>Registro de actividad</strong> (log): eventos técnicos para diagnosticar errores, sin tokens ni secretos.</li>
+        </ul>
+        <p>La interfaz de la aplicación es un servidor local que escucha solo en <code>127.0.0.1</code>; no es accesible desde otros equipos.</p>
+        <p>Los datos permanecen en el equipo donde se ejecuta la aplicación y son accesibles para quien use ese equipo y la aplicación (por ejemplo, un contador que gestiona las facturas de sus clientes). Quien conecte la cuenta de otra persona debe contar con el <strong>consentimiento del titular</strong> de esa cuenta de Gmail.</p>
+      </section>
+
+      <section class="panel">
+        <h2>4. Con quién se comparten los datos</h2>
+        <p>Con nadie. Los datos de Google no se transfieren al desarrollador ni a terceros; no se venden; no se usan para publicidad, perfiles ni elaboración de listas; no se usan para entrenar modelos de inteligencia artificial o de aprendizaje automático; y ninguna persona los lee, salvo quien usa la aplicación en su propio equipo.</p>
+        <p>La aplicación solo se comunica por Internet con Google (inicio de sesión OAuth y Gmail API) para realizar las acciones descritas en la sección 2. Además, la interfaz puede cargar la tipografía <em>Inter</em> desde Google Fonts; esa solicitud no contiene datos de tu cuenta ni de tus correos.</p>
+        <p class="lang-note">Invoice Track's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+      </section>
+
+      <section class="panel">
+        <h2>5. Seguridad</h2>
+        <ul>
+          <li>La autorización usa el estándar OAuth 2.0 de Google: la aplicación nunca ve ni guarda tu contraseña.</li>
+          <li>Los archivos de configuración y tokens se escriben de forma atómica para no quedar corruptos.</li>
+          <li>Los XML se leen de forma segura (se rechazan documentos con DTD o entidades externas y los de tamaño excesivo).</li>
+          <li>Si Google revoca la autorización, la aplicación lo informa y pide autorizar de nuevo; no reintenta en bucle.</li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2>6. Conservación y eliminación de datos</h2>
+        <ul>
+          <li><strong>Revocar el acceso:</strong> en cualquier momento desde <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>. La aplicación dejará de poder leer esa cuenta.</li>
+          <li><strong>Eliminar un cliente</strong> en la aplicación borra también su token de acceso del equipo.</li>
+          <li><strong>Desinstalar:</strong> el desinstalador de Windows pregunta si también quieres eliminar la configuración y las credenciales guardadas; tus facturas nunca se borran automáticamente.</li>
+          <li><strong>Facturas y datos locales:</strong> permanecen hasta que tú los elimines; basta con borrar la carpeta de facturas y la carpeta de datos de la aplicación.</li>
+          <li>La etiqueta <em>Procesado</em> de Gmail no se elimina sola; puedes borrarla desde Gmail.</li>
+        </ul>
+        <p>Como no almacenamos tus datos en nuestros servidores, no hay datos tuyos que solicitar al desarrollador; si tienes dudas, escribe a <a href="mailto:nocalde28@gmail.com">nocalde28@gmail.com</a>.</p>
+      </section>
+
+      <section class="panel">
+        <h2>7. Menores de edad</h2>
+        <p>Invoice Track no está dirigida a menores de edad ni recopila deliberadamente datos de ellos.</p>
+      </section>
+
+      <section class="panel">
+        <h2>8. Cambios en esta política</h2>
+        <p>Si esta política cambia, publicaremos la nueva versión en esta misma dirección con su fecha de actualización. Si el cambio altera de forma importante el uso de tus datos de Google, se pedirá de nuevo tu autorización.</p>
+      </section>
+
+      <section class="panel">
+        <h2>9. Contacto</h2>
+        <p><a href="mailto:nocalde28@gmail.com">nocalde28@gmail.com</a></p>
+      </section>
+    </article>
+
+    <!-- ===================== ENGLISH ===================== -->
+    <article id="en" lang="en">
+      <section class="panel">
+        <h2>Summary</h2>
+        <p class="updated">Last updated: November 4, 2026</p>
+        <p><strong>Invoice Track</strong> is a desktop application that downloads electronic invoices (PDF and XML) from your Gmail messages and organizes them on your computer. <strong>Everything is processed locally: we do not send your emails, attachments or credentials to any server operated by the developer or to any third party</strong>, we do not sell data, and we show no advertising.</p>
+        <p class="lang-note">Invoice Track's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+      </section>
+
+      <section class="panel">
+        <h2>1. Who is responsible</h2>
+        <p>Invoice Track is developed and maintained by an independent developer. For any question about this policy or your data, write to <a href="mailto:nocalde28@gmail.com">nocalde28@gmail.com</a>.</p>
+      </section>
+
+      <section class="panel">
+        <h2>2. Google user data the app uses</h2>
+        <p>When you authorize an account with Google Sign-In, Invoice Track requests a single scope: <code>https://www.googleapis.com/auth/gmail.modify</code>. It is used only for the following:</p>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Google data</th><th>Purpose</th></tr></thead>
+            <tbody>
+              <tr><td>Email address of the authorized account</td><td>Identify the client's account and open the right message in Gmail.</td></tr>
+              <tr><td>List of matching messages (identifier, received date, labels, attachment names and types)</td><td>Find the emails that carry an invoice (one PDF and one XML) in the chosen date range, and avoid repeating those already processed.</td></tr>
+              <tr><td>PDF and XML attachments of those messages</td><td>Download them, classify them as purchase or sale, and save them on your computer.</td></tr>
+              <tr><td>Gmail labels</td><td>Create, if missing, and apply the <strong>Procesado</strong> ("Processed") label to messages already saved.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>To locate attachments, Gmail returns the full message to the app, but Invoice Track <strong>does not store or display the body of your emails</strong>; it keeps only the data in the table above. <strong>The app never deletes or sends email</strong> and does not alter message content; the only change it makes in Gmail is the <em>Procesado</em> label.</p>
+      </section>
+
+      <section class="panel">
+        <h2>3. What is stored and where</h2>
+        <p>Everything is stored on the computer where the app is installed:</p>
+        <ul>
+          <li><strong>Downloaded invoices</strong> (PDF and XML): in the folder you choose. Next to each one, a hidden file keeps the Gmail message identifier so that retries do not create duplicates.</li>
+          <li><strong>Access credentials (Google tokens)</strong>: one file per account, in the app data folder of the operating-system user, with permissions restricted to that user where the system supports it (macOS and Linux). Tokens are never written to the log or included in the application package.</li>
+          <li><strong>Client list</strong>: the name, Gmail address and tax ID you enter for each client, and the app settings (invoice folder, theme).</li>
+          <li><strong>Activity log</strong>: technical events used to diagnose errors, without tokens or secrets.</li>
+        </ul>
+        <p>The app's interface is a local server that listens only on <code>127.0.0.1</code>; it is not reachable from other machines.</p>
+        <p>Data stays on the computer where the app runs and is accessible to whoever uses that computer and the app (for example, an accountant who manages invoices for clients). Anyone who connects another person's account must have that account holder's <strong>consent</strong>.</p>
+      </section>
+
+      <section class="panel">
+        <h2>4. Who the data is shared with</h2>
+        <p>No one. Google user data is not transferred to the developer or to third parties; it is not sold; it is not used for advertising, profiling or list building; it is not used to train artificial-intelligence or machine-learning models; and no person reads it other than the user of the app on their own computer.</p>
+        <p>The app communicates over the Internet only with Google (OAuth sign-in and the Gmail API) to perform the actions described in section 2. In addition, the interface may load the <em>Inter</em> typeface from Google Fonts; that request contains no data from your account or emails.</p>
+        <p class="lang-note">Invoice Track's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+      </section>
+
+      <section class="panel">
+        <h2>5. Security</h2>
+        <ul>
+          <li>Authorization uses Google's OAuth 2.0 standard: the app never sees or stores your password.</li>
+          <li>Configuration and token files are written atomically so they are not left corrupted.</li>
+          <li>XML files are parsed safely (documents with DTDs or external entities, and oversized ones, are rejected).</li>
+          <li>If Google revokes the authorization, the app reports it and asks you to authorize again; it does not retry in a loop.</li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2>6. Retention and deletion</h2>
+        <ul>
+          <li><strong>Revoke access</strong> at any time at <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>. The app will no longer be able to read that account.</li>
+          <li><strong>Deleting a client</strong> in the app also deletes its access token from the computer.</li>
+          <li><strong>Uninstalling:</strong> the Windows uninstaller asks whether you also want to delete the saved settings and credentials; your invoices are never deleted automatically.</li>
+          <li><strong>Invoices and local data</strong> remain until you delete them; deleting the invoice folder and the app data folder is enough.</li>
+          <li>The <em>Procesado</em> label in Gmail is not removed automatically; you can delete it from Gmail.</li>
+        </ul>
+        <p>Because we do not store your data on our servers, there is no data of yours to request from the developer; if you have questions, write to <a href="mailto:nocalde28@gmail.com">nocalde28@gmail.com</a>.</p>
+      </section>
+
+      <section class="panel">
+        <h2>7. Children</h2>
+        <p>Invoice Track is not directed to children and does not knowingly collect their data.</p>
+      </section>
+
+      <section class="panel">
+        <h2>8. Changes to this policy</h2>
+        <p>If this policy changes, the new version will be published at this same address with its update date. If a change materially affects how your Google data is used, your authorization will be requested again.</p>
+      </section>
+
+      <section class="panel">
+        <h2>9. Contact</h2>
+        <p><a href="mailto:nocalde28@gmail.com">nocalde28@gmail.com</a></p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Invoice Track</p>
+    <p><a href="index.html">Inicio / Home</a> &middot; <a href="#es">Español</a> &middot; <a href="#en">English</a> &middot; <a href="mailto:nocalde28@gmail.com">Contacto</a></p>
+  </footer>
+</body>
+</html>

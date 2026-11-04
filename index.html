@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <title>Invoice Track</title>
+  <meta name="description" content="Invoice Track es una aplicación de escritorio que descarga las facturas electrónicas (PDF y XML) de tus correos de Gmail y las organiza en tu disco por cliente, año, mes y día.">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <div class="orbs" aria-hidden="true"></div>
+
+  <main class="wrap">
+    <header class="hero">
+      <img class="logo" src="img/logo.png" width="88" height="88" alt="Logotipo de Invoice Track">
+      <h1>Invoice Track</h1>
+      <p class="lead">Descarga las facturas electrónicas de tu Gmail y organízalas en tu computador, sin subirlas a ningún servidor.</p>
+      <nav class="nav" aria-label="Principal">
+        <a class="btn" href="privacy.html">Política de privacidad</a>
+        <a class="btn secondary" href="#en">English</a>
+        <a class="btn secondary" href="mailto:nocalde28@gmail.com">Contacto</a>
+      </nav>
+    </header>
+
+    <section class="panel" aria-labelledby="que-hace">
+      <h2 id="que-hace">Qué hace</h2>
+      <p>Invoice Track es una aplicación de escritorio para <strong>Windows, macOS y Linux</strong>. Busca en la cuenta de Gmail que tú autorices los correos que traen una factura electrónica (un archivo <strong>PDF</strong> y uno <strong>XML</strong>), descarga esos adjuntos y los guarda en una carpeta de tu computador, ordenados por <strong>cliente, año, mes y día</strong>.</p>
+      <ul>
+        <li>Clasifica cada comprobante como <strong>compra</strong> o <strong>venta</strong> leyendo el contenido del XML y comparando la cédula de cada cliente.</li>
+        <li>Marca en Gmail los correos ya procesados con la etiqueta <strong>Procesado</strong>, para no repetirlos.</li>
+        <li>Exporta copias de los XML originales a una carpeta, lista para usarlos en otro sistema.</li>
+        <li>Muestra el avance real, permite cancelar y avisa de todo lo que necesita revisión manual.</li>
+      </ul>
+    </section>
+
+    <div class="grid">
+      <section class="panel" aria-labelledby="paso-1">
+        <span class="step" aria-hidden="true">1</span>
+        <h2 id="paso-1">Autoriza una vez</h2>
+        <p>Cada cuenta de Gmail se conecta con el inicio de sesión de Google. Tu contraseña nunca pasa por Invoice Track.</p>
+      </section>
+      <section class="panel" aria-labelledby="paso-2">
+        <span class="step" aria-hidden="true">2</span>
+        <h2 id="paso-2">Sincroniza</h2>
+        <p>Elige el cliente y, si quieres, un rango de fechas. La aplicación descarga y clasifica las facturas.</p>
+      </section>
+      <section class="panel" aria-labelledby="paso-3">
+        <span class="step" aria-hidden="true">3</span>
+        <h2 id="paso-3">Encuéntralas ordenadas</h2>
+        <p>Las facturas quedan en la carpeta que elegiste, con sus nombres originales y sin sobrescribir nada.</p>
+      </section>
+    </div>
+
+    <section class="panel" aria-labelledby="datos">
+      <h2 id="datos">Tus datos se quedan en tu equipo</h2>
+      <p>Invoice Track procesa todo <strong>localmente</strong>. No envía tus correos, adjuntos ni credenciales a ningún servidor del desarrollador ni a terceros, y no incluye analítica ni publicidad. La aplicación solo se comunica con los servicios de Google para iniciar sesión y leer Gmail.</p>
+      <h3>Permiso de Gmail que solicita</h3>
+      <p><code>https://www.googleapis.com/auth/gmail.modify</code> (ver y modificar, pero <strong>no eliminar</strong>, correos). Se necesita para:</p>
+      <ul>
+        <li>leer los correos y descargar sus adjuntos PDF y XML, y</li>
+        <li>crear y aplicar la etiqueta <strong>Procesado</strong>.</li>
+      </ul>
+      <p>Invoice Track <strong>nunca borra ni envía correos</strong>. Puedes revocar el acceso en cualquier momento desde <a href="https://myaccount.google.com/permissions" rel="noopener">tu cuenta de Google</a>.</p>
+      <p>Más detalles en la <a href="privacy.html">política de privacidad</a>.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="para-quien">
+      <h2 id="para-quien">Para quién es</h2>
+      <p>Para profesionales y pequeñas empresas que reciben sus facturas electrónicas por correo y quieren archivarlas de forma ordenada, por ejemplo un contador que gestiona las facturas de varios clientes <strong>con el consentimiento de cada titular de la cuenta</strong>.</p>
+    </section>
+
+    <section class="panel" id="en" lang="en" aria-labelledby="en-title">
+      <h2 id="en-title">English summary</h2>
+      <p><strong>Invoice Track</strong> is a desktop app for Windows, macOS and Linux. With your authorization it finds the emails in your Gmail account that carry an electronic invoice (a PDF and an XML file), downloads those attachments, and saves them on your computer organized by client, year, month and day. It also labels processed emails in Gmail as <em>Procesado</em>.</p>
+      <p>Everything is processed <strong>locally on your computer</strong>. Invoice Track does not send your emails, attachments or credentials to the developer or to any third party, and it contains no analytics or advertising. It requests the Gmail permission <code>gmail.modify</code> only to read emails, download their attachments and apply a label; it never deletes or sends email.</p>
+      <p>Read the <a href="privacy.html#en">Privacy Policy</a> or write to <a href="mailto:nocalde28@gmail.com">nocalde28@gmail.com</a>.</p>
+      <p class="lang-note">Invoice Track's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Invoice Track &middot; Procesamiento local privado</p>
+    <p><a href="privacy.html">Política de privacidad</a> &middot; <a href="privacy.html#en">Privacy Policy</a> &middot; <a href="mailto:nocalde28@gmail.com">Contacto</a></p>
+  </footer>
+</body>
+</html>
